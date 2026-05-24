@@ -5,6 +5,7 @@ version: 1.0.0
 author: nerudek
 compatible-with: claude-code, openclaw, hermes-agent, kimi-code
 tags: [tcp, bridge, agent-communication, multi-agent, protocol, tailscale]
+license: "MIT"
 ---
 
 # TCP Bridge Agent Protocol — One Standard for Cross-Machine AI Agent Communication
@@ -70,7 +71,18 @@ That's it. No versioning, no content negotiation, no streaming, no keep-alive. O
 **Timeout:** 10 seconds
 **Encoding:** UTF-8
 
-### Usage
+#
+## Install
+
+```bash
+# Skopiuj do vault Claude Code
+cp -r . ~/.claude/skills/vault/tcp-bridge-agent-protocol/
+
+# Lub sklonuj bezpośrednio
+git clone https://github.com/nerudek/tcp-bridge-agent-protocol ~/.claude/skills/vault/tcp-bridge-agent-protocol/
+```
+
+## Usage
 
 **M4 → M2 (send a command):**
 ```bash
